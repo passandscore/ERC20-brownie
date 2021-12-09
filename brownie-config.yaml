@@ -1,0 +1,13 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.4.0
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0"
+dotenv: .env
+wallets:
+  from_key: ${PRIVATE_KEY}
+networks:
+  default: development
+  ropsten: active
+  explorer: https://api-ropsten.etherscan.io/${ETHERSCAN_TOKEN}
